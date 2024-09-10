@@ -6,13 +6,13 @@ import { Button, Input, InputNumber, Modal, Radio } from 'antd';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useAppSelector } from 'store/hooks';
 import { Controller, useForm, useWatch } from 'react-hook-form';
-import BarcodeScannerComponent from 'react-qr-barcode-scanner';
 import { openConfirm } from 'utils/functions';
 import iconQrCode from 'assets/icons/ic_qrcode.svg';
 import FuncBlock from 'components/common/FuncBlock';
+import BarcodeScannerComponent from 'components/common/BarcodeScanner';
 
 const FormLogin: React.FC = () => {
-    const [data2, setData2] = React.useState('1');
+    const [data2, setData2] = React.useState('11');
 
     const [openModal, setOpenModal] = useState(false);
     const [showQRModal, setShowQRModal] = useState(false);
